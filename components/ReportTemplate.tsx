@@ -42,7 +42,7 @@ const ReportTemplate = forwardRef<HTMLDivElement, ReportTemplateProps>(({ data }
             <td className="border border-slate-900 p-2 uppercase font-semibold">{data.namaProgram || '-'}</td>
           </tr>
           <tr>
-            <td className="text-center align-middle border border-slate-900 p-2 bg-slate-100 font-bold">ANJURAN</td>
+            <td className="border border-slate-900 p-2 bg-slate-100 font-bold">ANJURAN</td>
             <td className="border border-slate-900 p-2">{data.anjuran || '-'}</td>
           </tr>
           <tr>
