@@ -42,7 +42,7 @@ const ReportTemplate = forwardRef<HTMLDivElement, ReportTemplateProps>(({ data }
             <td className="border border-slate-900 p-2 uppercase font-semibold">{data.namaProgram || '-'}</td>
           </tr>
           <tr>
-            <td className="border border-slate-900 p-2 bg-slate-100 font-bold">ANJURAN</td>
+            <td className="text-center align-middle border border-slate-900 p-2 bg-slate-100 font-bold">ANJURAN</td>
             <td className="border border-slate-900 p-2">{data.anjuran || '-'}</td>
           </tr>
           <tr>
@@ -100,7 +100,10 @@ const ReportTemplate = forwardRef<HTMLDivElement, ReportTemplateProps>(({ data }
 
       {/* Image Grid Section */}
       <div className="mt-6">
-        <h3 className="text-center font-bold bg-slate-900 text-white p-1 mb-2 text-xs uppercase tracking-wider">Lensa Aktiviti (Lampiran Gambar)</h3>
+        <h3 className="flex justify-center h-8 font-bold bg-slate-900 text-white mb-2 text-xs uppercase tracking-wider">
+          Lensa Aktiviti (Lampiran Gambar)
+        </h3>
+
         <div className="grid grid-cols-3 gap-2">
           {[0, 1, 2, 3, 4, 5].map((i) => (
             <div key={i} className="aspect-[4/3] border border-slate-300 bg-slate-50 flex items-center justify-center overflow-hidden">
